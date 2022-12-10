@@ -317,6 +317,101 @@ footer {
     }
 }
 
+.upload {
+    background: $white;
+    margin: 0 auto;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+
+    .upload-logo {
+        margin-bottom: 2rem;
+
+        img {
+            width: 10rem;
+        }
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        .form-fields {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+
+            label {
+                font-weight: 600;
+                color: $black;
+            }
+
+            input {
+                padding: .5rem 1rem;
+                outline: none;
+                border: 1px solid #000;
+                border-radius: 5px;
+
+                &::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                &[type=number] {
+                    -moz-appearance: textfield;
+                }
+            }
+        }
+
+        .cv {
+
+            #cv {
+                border: none;
+            }
+        }
+    }
+
+    .handle-btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-top: 1.5rem;
+
+        button {
+            padding: .2rem 1rem;
+            border-radius: .5rem;
+            border: none;
+            outline: none;
+            background: #52A350;
+            border-radius: 20px;
+            color: $white;
+            font-size: 1.2rem;
+            line-height: 2rem;
+
+            &:first-of-type {
+                background: #FFFFFF;
+                border: 1px solid #52A350;
+                border-radius: 20px;
+                color: $primary;
+            }
+        }
+    }
+}
+
 
 /***** MEDIA QUERIES *****/
 
@@ -660,6 +755,17 @@ footer {
 
         div {
             height: 7rem;
+        }
+    }
+
+    .upload {
+
+        form {
+
+            .form-fields {
+                grid-template-columns: 1fr;
+                gap: .5rem;
+            }
         }
     }
 }
