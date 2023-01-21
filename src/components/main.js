@@ -18,7 +18,7 @@ const Main = () => {
                     <p>If you want a quick easy CV review support and Advice Techniques For a Career.</p>
                     <div className="main-btn">
                         <button onClick={() => handleShow(display)}>Upload Curriculum Vitae</button>
-                        <a href="#job">Upload Job Description</a>
+                        {/* <a href="#job">Upload Job Description</a> */}
                     </div>
                 </section>
 
